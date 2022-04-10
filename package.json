@@ -1,29 +1,27 @@
 {
-  "name": "my-microservice",
+  "name": "moleculer-boilerplate-project-name",
   "version": "1.0.0",
+  "author": "Muryllo & Lucas",
   "description": "My Moleculer-based microservices project",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js services/**/*.service.ts --hot --repl --config moleculer.config.ts",
-    "start": "npm run build && moleculer-runner dist/services/**/*.service.js --repl --config dist/moleculer.config.js",
+    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js src/services/**/*.service.ts --hot --repl --config moleculer.config.ts",
+    "start": "npm run build && moleculer-runner dist/src/services/**/*.service.js --repl --config dist/moleculer.config.js",
     "cli": "moleculer connect TCP"
   },
   "keywords": [
     "microservices",
     "moleculer"
   ],
-  "author": "Muryllo & Lucas",
   "dependencies": {
+    "@faker-js/faker": "^6.1.2",
     "@moleculer/lab": "^0.6.2",
     "moleculer": "^0.14.0",
-    "moleculer-db": "^0.8.4",
-    "moleculer-db-adapter-mongo": "^0.4.7",
     "moleculer-web": "^0.9.0",
-    "typescript": "^3.8.3"
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
-    "@types/mkdirp": "^1.0.0",
     "@types/node": "^13.9.8",
     "moleculer-repl": "^0.6.2",
     "rimraf": "^3.0.2",
