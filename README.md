@@ -1,4 +1,4 @@
-<h1 align="center">Moleculer Microsservice Boilerplate</h1>
+<h1 align="center">Moleculer Microservice Boilerplate</h1>
 <p align="center">
   <img src="https://raw.githubusercontent.com/moleculerjs/branding/master/logo/logo.png" width="120" alt="React Logo" />
 </p>
