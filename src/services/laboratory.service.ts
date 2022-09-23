@@ -9,8 +9,8 @@ export default class LaboratoryService extends Service {
       name: 'laboratory',
       mixins: [Laboratory.AgentService],
       settings: {
-        token: 'tz6pzvv9c',
-        apiKey: 'H0ZKS5S-BGJ47FX-NNMXJVC-GHRBHTK'
+        token: '',
+        apiKey: ''
       }
     })
   }
